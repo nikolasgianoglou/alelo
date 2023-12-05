@@ -17,6 +17,7 @@
 		F8141E362B1F5ADF00DC7564 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8141E352B1F5ADF00DC7564 /* Coordinator.swift */; };
 		F8141E382B1F5B0800DC7564 /* CoordinatorViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8141E372B1F5B0800DC7564 /* CoordinatorViewModel.swift */; };
 		F8141E3A2B1F5B4500DC7564 /* CoordinatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8141E392B1F5B4500DC7564 /* CoordinatorView.swift */; };
+		F8141E422B1F5C4F00DC7564 /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8141E412B1F5C4F00DC7564 /* Product.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +51,7 @@
 		F8141E352B1F5ADF00DC7564 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
 		F8141E372B1F5B0800DC7564 /* CoordinatorViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoordinatorViewModel.swift; sourceTree = "<group>"; };
 		F8141E392B1F5B4500DC7564 /* CoordinatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoordinatorView.swift; sourceTree = "<group>"; };
+		F8141E412B1F5C4F00DC7564 /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +102,7 @@
 		F8141E092B1F568C00DC7564 /* Alelo */ = {
 			isa = PBXGroup;
 			children = (
+				F8141E3B2B1F5BC300DC7564 /* Core */,
 				F8141E342B1F5AC600DC7564 /* Coordinator */,
 				F8141E0A2B1F568C00DC7564 /* AleloApp.swift */,
 				F8141E0C2B1F568C00DC7564 /* ContentView.swift */,
@@ -142,6 +145,54 @@
 				F8141E392B1F5B4500DC7564 /* CoordinatorView.swift */,
 			);
 			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		F8141E3B2B1F5BC300DC7564 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				F8141E3C2B1F5BC700DC7564 /* Home */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		F8141E3C2B1F5BC700DC7564 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				F8141E402B1F5BEF00DC7564 /* View */,
+				F8141E3F2B1F5BE700DC7564 /* Model */,
+				F8141E3E2B1F5BD400DC7564 /* Manager */,
+				F8141E3D2B1F5BCE00DC7564 /* ViewModel */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		F8141E3D2B1F5BCE00DC7564 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		F8141E3E2B1F5BD400DC7564 /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
+		F8141E3F2B1F5BE700DC7564 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F8141E412B1F5C4F00DC7564 /* Product.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		F8141E402B1F5BEF00DC7564 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -279,6 +330,7 @@
 				F8141E382B1F5B0800DC7564 /* CoordinatorViewModel.swift in Sources */,
 				F8141E0B2B1F568C00DC7564 /* AleloApp.swift in Sources */,
 				F8141E362B1F5ADF00DC7564 /* Coordinator.swift in Sources */,
+				F8141E422B1F5C4F00DC7564 /* Product.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
