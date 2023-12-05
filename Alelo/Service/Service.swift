@@ -13,24 +13,9 @@ protocol ServiceProtocol {
 
 class Service: ServiceProtocol {
     func getProducts(url: AppConstants.Urls, completion: @escaping (Result<ProductList, Error>) -> Void) {
-//        guard let url = URL(string: url.rawValue) else {
-//            completion(.failure(NetworkErrors.invalidUrl))
-//            return
-//        }
-        
+
         guard let list = loadDataFromMock() else { return }
         completion(.success(list))
-//        URLSession.shared.dataTask(with: url) { data, response, error in
-//            guard let data else {
-//                completion(.failure(NetworkErrors.badRequest))
-//                return
-//            }
-//            guard let list = try? JSONDecoder().decode(ProductList.self, from: data) else {
-//                completion(.failure(NetworkErrors.badRequest))
-//                return
-//            }
-//            completion(.success(list))
-//        }.resume()
     }
     
     func loadDataFromMock() -> ProductList? {

@@ -12,7 +12,6 @@ import SwiftUI
 struct HomeDetails: View {
     var product: Product
     
-    @EnvironmentObject var screenSize: ScreenSize
     @Environment(\.dismiss) var dismiss
     @State var selectedSize = ""
     @State var amount = 1
@@ -20,9 +19,7 @@ struct HomeDetails: View {
     
     var body: some View {
         ZStack {
-//            Color.themeSecondary
-//                .ignoresSafeArea()
-            
+
             VStack(spacing: 16) {
                 CustomBackButton()
                 

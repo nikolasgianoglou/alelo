@@ -9,7 +9,6 @@ import SwiftUI
 
 struct HomeCard: View {
     var product: Product
-    @EnvironmentObject var screenSize: ScreenSize
     
     var body: some View {
         NavigationLink {
