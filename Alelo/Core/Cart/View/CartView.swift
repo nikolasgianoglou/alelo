@@ -37,7 +37,7 @@ struct CartView: View {
                     }
                 } else {
                     Text("Carrinho vazio!")
-                        .foregroundStyle(.red)
+                        .foregroundStyle(.white)
                         .padding()
                         .background {
                             RoundedRectangle(cornerRadius: 15)
@@ -69,7 +69,7 @@ struct CartView: View {
                                     }
                             }
                             .alert(isPresented: $showingAlert) {
-                                            Alert(title: Text("Em desenvolvimento"), dismissButton: .default(Text("OK")))
+                                            Alert(title: Text("Ainda não disponível"), dismissButton: .cancel(Text("OK")))
                                         }
                         }
                         .padding(.horizontal)
