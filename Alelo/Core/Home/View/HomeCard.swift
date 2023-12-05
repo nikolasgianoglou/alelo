@@ -16,7 +16,7 @@ struct HomeCard: View {
             HomeDetails(product: product)
         } label: {
             VStack {
-                CustomAsyncImage(product: product, size: screenSize.width * 0.5)
+                CustomAsyncImage(product: product, size: 100)
                 
                 VStack(alignment: .leading) {
                     Text(product.name)
@@ -25,13 +25,13 @@ struct HomeCard: View {
                         .bold()
                     
                     HStack {
-                        if product.on_sale {
-                            Text(product.regular_price)
+                        if product.onSale {
+                            Text(product.regularPrice)
                                 .foregroundStyle(.gray)
                                 .strikethrough(true, color: Color.red)
                         }
                         Spacer()
-                        Text(product.actual_price)
+                        Text(product.actualPrice)
                             .bold()
                     }
                     .lineLimit(1)
@@ -50,7 +50,7 @@ struct HomeCard: View {
                     .shadow(color: .gray.opacity(0.2), radius: 5)
             }
             .overlay(alignment: .topTrailing) {
-                if product.on_sale {
+                if product.onSale {
                     Text("PROMOÇÃO")
                         .lineLimit(1)
                         .foregroundStyle(.white)

@@ -21,13 +21,9 @@ class DeveloperPreview {
     static let instance = DeveloperPreview()
     private init() { }
     
-    let product = Product(name: "product",
-                          image: "image",
-                          regular_price: "RS 2,00",
-                          actual_price: "",
-                          on_sale: true,
-                          sizes: [ProductSize(available: true, size: "", sku: "")])
-    
+    let product = Product(name: "", style: "", codeColor: "", colorSlug: "", color: "", onSale: true, regularPrice: "", actualPrice: "", discountPercentage: "", installments: "", image: "", sizes: [Size(available: true, size: "", sku: "")])
+        
+        
     
     
 }

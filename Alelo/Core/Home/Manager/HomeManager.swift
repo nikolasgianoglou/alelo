@@ -16,9 +16,10 @@ class HomeManager: HomeManagerProtocol {
     
     init(webservice: ServiceProtocol = Service()) {
         self.webservice = webservice
+        
     }
     
     func getProductList(completion: @escaping (Result<ProductList, Error>) -> Void) {
-        Service.getProducts(url: AppConstants.Urls.productList, completion: completion)
+        Service().getProducts(url: AppConstants.Urls.productList, completion: completion)
     }
 }

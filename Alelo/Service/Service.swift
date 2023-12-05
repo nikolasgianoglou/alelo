@@ -8,26 +8,41 @@
 import Foundation
 
 protocol ServiceProtocol {
-    static func getProducts(url: AppConstants.Urls, completion: @escaping (Result<ProductList, Error>) -> Void)
+     func getProducts(url: AppConstants.Urls, completion: @escaping (Result<ProductList, Error>) -> Void)
 }
 
 class Service: ServiceProtocol {
-    static func getProducts(url: AppConstants.Urls, completion: @escaping (Result<ProductList, Error>) -> Void) {
-        guard let url = URL(string: url.rawValue) else {
-            completion(.failure(NetworkErrors.invalidUrl))
-            return
-        }
+    func getProducts(url: AppConstants.Urls, completion: @escaping (Result<ProductList, Error>) -> Void) {
+//        guard let url = URL(string: url.rawValue) else {
+//            completion(.failure(NetworkErrors.invalidUrl))
+//            return
+//        }
         
-        URLSession.shared.dataTask(with: url) { data, response, error in
-            guard let data else {
-                completion(.failure(NetworkErrors.badRequest))
-                return
+        guard let list = loadDataFromMock() else { return }
+        completion(.success(list))
+//        URLSession.shared.dataTask(with: url) { data, response, error in
+//            guard let data else {
+//                completion(.failure(NetworkErrors.badRequest))
+//                return
+//            }
+//            guard let list = try? JSONDecoder().decode(ProductList.self, from: data) else {
+//                completion(.failure(NetworkErrors.badRequest))
+//                return
+//            }
+//            completion(.success(list))
+//        }.resume()
+    }
+    
+    func loadDataFromMock() -> ProductList? {
+        guard let url = Bundle.main.url(forResource: "product", withExtension: "json")
+            else {
+                print("Json file not found")
+                return nil
             }
-            guard let list = try? JSONDecoder().decode(ProductList.self, from: data) else {
-                completion(.failure(NetworkErrors.badRequest))
-                return
-            }
-            completion(.success(list))
-        }.resume()
+        
+        let data = try? Data(contentsOf: url)
+        let list =  try? JSONDecoder().decode(ProductList.self, from: data!)
+        print("list of products: \(list)")
+        return list
     }
 }

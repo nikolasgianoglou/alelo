@@ -26,7 +26,7 @@ struct HomeDetails: View {
             VStack(spacing: 16) {
                 CustomBackButton()
                 
-                CustomAsyncImage(product: product, size: screenSize.width * 0.5)
+                CustomAsyncImage(product: product, size: 100)
                     .frame(maxWidth: .infinity)
                     .padding(.vertical)
                     .background {
@@ -42,7 +42,7 @@ struct HomeDetails: View {
                     .lineLimit(1)
                     .padding(.horizontal)
                 
-                if product.on_sale {
+                if product.onSale {
                     Text("PROMOÇÃO")
                         .font(.title2)
                         .foregroundStyle(Color.white)
@@ -56,17 +56,17 @@ struct HomeDetails: View {
                     
                     HStack(spacing: 6) {
                         Text("de")
-                        Text(product.regular_price)
+                        Text(product.regularPrice)
                             .bold()
                             .foregroundStyle(Color.black.opacity(0.35))
                             .strikethrough(true, color: Color.red)
                         Text("por")
-                        Text(product.actual_price)
+                        Text(product.actualPrice)
                             .bold()
                     }
                     .font(.title3)
                 } else {
-                    Text(product.regular_price)
+                    Text(product.regularPrice)
                         .bold()
                         .font(.title3)
                 }
@@ -115,7 +115,7 @@ struct HomeDetails: View {
                     
                     Divider()
                 }
-                .padding(.horizontal, screenSize.width * 0.1)
+                .padding(.horizontal, 100)
                 
                 Button {
                     addToCart()

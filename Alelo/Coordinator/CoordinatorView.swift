@@ -13,8 +13,11 @@ struct CoordinatorView: View {
     
     var body: some View {
         NavigationView {
-            
+            switch viewModel.uiState {
+            case .home: HomeView()
+            }
         }
     }
+//        .environmentObject(ScreenSize(size: ))
     
 }

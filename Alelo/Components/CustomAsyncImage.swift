@@ -45,6 +45,6 @@ struct CustomAsyncImage: View {
 
 struct CustomAsyncImage_Previews: PreviewProvider {
     static var previews: some View {
-        CustomAsyncImage(product: Product(name: "", image: "", regular_price: "", actual_price: "", on_sale: true, sizes: [ProductSize(available: true, size: "", sku: "")]), size: 10)
+        CustomAsyncImage(product: dev.product, size: 10)
     }
 }

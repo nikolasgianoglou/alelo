@@ -30,18 +30,18 @@ struct CartProductCard: View {
                 }
                 .font(.subheadline)
                 
-                if item.product.on_sale {
+                if item.product.onSale {
                     HStack(spacing: 6) {
-                        Text(item.product.regular_price)
+                        Text(item.product.regularPrice)
                             .foregroundStyle(Color.black.opacity(0.6))
                             .strikethrough(true, color: Color.red)
-                        Text(item.product.actual_price)
+                        Text(item.product.actualPrice)
                             .bold()
                     }
                     .lineLimit(1)
                     .minimumScaleFactor(0.5)
                 } else {
-                    Text(item.product.regular_price)
+                    Text(item.product.regularPrice)
                         .bold()
                 }
                 

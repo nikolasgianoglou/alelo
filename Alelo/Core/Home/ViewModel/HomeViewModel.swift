@@ -22,7 +22,7 @@ extension HomeViewModel {
     var filteredProducts: [Product] {
         var filteredProducts: [Product] = self.products
         if selectedFilter == .onSale {
-            filteredProducts = filteredProducts.filter { $0.on_sale }
+            filteredProducts = filteredProducts.filter { $0.onSale }
         }
         
         return filteredProducts

@@ -29,7 +29,7 @@ extension CartViewModel {
         var total: Double = 0
         
         for product in products {
-            let priceString = product.product.actual_price.components(separatedBy: CharacterSet(charactersIn: "0123456789,.").inverted)
+            let priceString = product.product.actualPrice.components(separatedBy: CharacterSet(charactersIn: "0123456789,.").inverted)
                 .joined()
                 .replacingOccurrences(of: ",", with: ".")
             

@@ -36,6 +36,7 @@
 		F8141E6B2B1F638800DC7564 /* CartCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8141E6A2B1F638800DC7564 /* CartCard.swift */; };
 		F8141E6F2B1F63B500DC7564 /* CartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8141E6E2B1F63B500DC7564 /* CartView.swift */; };
 		F8141E722B1F648200DC7564 /* PreviewProvider+.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8141E712B1F648200DC7564 /* PreviewProvider+.swift */; };
+		F8141E762B1F686000DC7564 /* product.json in Resources */ = {isa = PBXBuildFile; fileRef = F8141E752B1F686000DC7564 /* product.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -88,6 +89,7 @@
 		F8141E6A2B1F638800DC7564 /* CartCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartCard.swift; sourceTree = "<group>"; };
 		F8141E6E2B1F63B500DC7564 /* CartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartView.swift; sourceTree = "<group>"; };
 		F8141E712B1F648200DC7564 /* PreviewProvider+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PreviewProvider+.swift"; sourceTree = "<group>"; };
+		F8141E752B1F686000DC7564 /* product.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = product.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -138,6 +140,7 @@
 		F8141E092B1F568C00DC7564 /* Alelo */ = {
 			isa = PBXGroup;
 			children = (
+				F8141E742B1F684800DC7564 /* Mock */,
 				F8141E702B1F647200DC7564 /* Extensions */,
 				F8141E592B1F611E00DC7564 /* Utils */,
 				F8141E582B1F610F00DC7564 /* Components */,
@@ -321,6 +324,14 @@
 			path = Extensions;
 			sourceTree = "<group>";
 		};
+		F8141E742B1F684800DC7564 /* Mock */ = {
+			isa = PBXGroup;
+			children = (
+				F8141E752B1F686000DC7564 /* product.json */,
+			);
+			path = Mock;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -427,6 +438,7 @@
 			files = (
 				F8141E122B1F568D00DC7564 /* Preview Assets.xcassets in Resources */,
 				F8141E0F2B1F568D00DC7564 /* Assets.xcassets in Resources */,
+				F8141E762B1F686000DC7564 /* product.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
