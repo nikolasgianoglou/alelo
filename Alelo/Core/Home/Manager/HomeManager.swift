@@ -12,13 +12,13 @@ protocol HomeManagerProtocol {
 }
 
 class HomeManager: HomeManagerProtocol {
-    let webservice: WebServiceProtocol
+    let webservice: ServiceProtocol
     
-    init(webservice: WebServiceProtocol = Webservice()) {
+    init(webservice: ServiceProtocol = Service()) {
         self.webservice = webservice
     }
     
     func getProductList(completion: @escaping (Result<ProductList, Error>) -> Void) {
-        Webservice.getProducts(url: AppConstants.Urls.productList, completion: completion)
+        Service.getProducts(url: AppConstants.Urls.productList, completion: completion)
     }
 }
