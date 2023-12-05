@@ -21,7 +21,18 @@ class DeveloperPreview {
     static let instance = DeveloperPreview()
     private init() { }
     
-    let product = Product(name: "", style: "", codeColor: "", colorSlug: "", color: "", onSale: true, regularPrice: "", actualPrice: "", discountPercentage: "", installments: "", image: "", sizes: [Size(available: true, size: "", sku: "")])
+    let product = Product(name: "T-SHIRT",
+                          style: "night",
+                          codeColor: "%#$%#",
+                          colorSlug: "%$%$#%$#",
+                          color: "Blue",
+                          onSale: true,
+                          regularPrice: "R$ 100",
+                          actualPrice: "R$ 90",
+                          discountPercentage: "10%",
+                          installments: "test",
+                          image: "breat",
+                          sizes: [Size(available: true, size: "P", sku: "gf433t")])
         
         
     
