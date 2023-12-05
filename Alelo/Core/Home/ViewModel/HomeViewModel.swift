@@ -9,7 +9,7 @@ import Foundation
 
 class HomeViewModel: ObservableObject {
     @Published var products: [Product] = []
-    @Published var selectedFilter: HomeFilters = .all
+    @Published var selectedFilter: Filter = .all
     var manager: HomeManagerProtocol
     
     init(manager: HomeManagerProtocol = HomeManager()) {

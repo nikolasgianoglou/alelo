@@ -7,7 +7,7 @@
 
 import Foundation
 
-enum HomeFilters: CaseIterable {
+enum Filter: CaseIterable {
     case all, onSale
     
     var text: String {

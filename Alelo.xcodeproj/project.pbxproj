@@ -25,6 +25,17 @@
 		F8141E4D2B1F5DAA00DC7564 /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8141E4C2B1F5DAA00DC7564 /* Service.swift */; };
 		F8141E502B1F5E0B00DC7564 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8141E4F2B1F5E0B00DC7564 /* Constants.swift */; };
 		F8141E532B1F5E5D00DC7564 /* NetworkErrors.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8141E522B1F5E5D00DC7564 /* NetworkErrors.swift */; };
+		F8141E552B1F609A00DC7564 /* HomeCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8141E542B1F609A00DC7564 /* HomeCard.swift */; };
+		F8141E572B1F60DC00DC7564 /* HomeDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8141E562B1F60DC00DC7564 /* HomeDetails.swift */; };
+		F8141E5B2B1F613300DC7564 /* ScreenSize.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8141E5A2B1F613300DC7564 /* ScreenSize.swift */; };
+		F8141E5D2B1F616200DC7564 /* CustomAsyncImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8141E5C2B1F616200DC7564 /* CustomAsyncImage.swift */; };
+		F8141E5F2B1F625500DC7564 /* CustomStepper.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8141E5E2B1F625500DC7564 /* CustomStepper.swift */; };
+		F8141E612B1F626A00DC7564 /* CustomBackButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8141E602B1F626A00DC7564 /* CustomBackButton.swift */; };
+		F8141E642B1F633000DC7564 /* CartViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8141E632B1F633000DC7564 /* CartViewModel.swift */; };
+		F8141E692B1F635800DC7564 /* CartItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8141E682B1F635800DC7564 /* CartItem.swift */; };
+		F8141E6B2B1F638800DC7564 /* CartCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8141E6A2B1F638800DC7564 /* CartCard.swift */; };
+		F8141E6F2B1F63B500DC7564 /* CartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8141E6E2B1F63B500DC7564 /* CartView.swift */; };
+		F8141E722B1F648200DC7564 /* PreviewProvider+.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8141E712B1F648200DC7564 /* PreviewProvider+.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -66,6 +77,17 @@
 		F8141E4C2B1F5DAA00DC7564 /* Service.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
 		F8141E4F2B1F5E0B00DC7564 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		F8141E522B1F5E5D00DC7564 /* NetworkErrors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkErrors.swift; sourceTree = "<group>"; };
+		F8141E542B1F609A00DC7564 /* HomeCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCard.swift; sourceTree = "<group>"; };
+		F8141E562B1F60DC00DC7564 /* HomeDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeDetails.swift; sourceTree = "<group>"; };
+		F8141E5A2B1F613300DC7564 /* ScreenSize.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScreenSize.swift; sourceTree = "<group>"; };
+		F8141E5C2B1F616200DC7564 /* CustomAsyncImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomAsyncImage.swift; sourceTree = "<group>"; };
+		F8141E5E2B1F625500DC7564 /* CustomStepper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomStepper.swift; sourceTree = "<group>"; };
+		F8141E602B1F626A00DC7564 /* CustomBackButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomBackButton.swift; sourceTree = "<group>"; };
+		F8141E632B1F633000DC7564 /* CartViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartViewModel.swift; sourceTree = "<group>"; };
+		F8141E682B1F635800DC7564 /* CartItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartItem.swift; sourceTree = "<group>"; };
+		F8141E6A2B1F638800DC7564 /* CartCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartCard.swift; sourceTree = "<group>"; };
+		F8141E6E2B1F63B500DC7564 /* CartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartView.swift; sourceTree = "<group>"; };
+		F8141E712B1F648200DC7564 /* PreviewProvider+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PreviewProvider+.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,6 +138,9 @@
 		F8141E092B1F568C00DC7564 /* Alelo */ = {
 			isa = PBXGroup;
 			children = (
+				F8141E702B1F647200DC7564 /* Extensions */,
+				F8141E592B1F611E00DC7564 /* Utils */,
+				F8141E582B1F610F00DC7564 /* Components */,
 				F8141E4E2B1F5DFD00DC7564 /* Constants */,
 				F8141E4B2B1F5D9900DC7564 /* Service */,
 				F8141E3B2B1F5BC300DC7564 /* Core */,
@@ -166,6 +191,7 @@
 		F8141E3B2B1F5BC300DC7564 /* Core */ = {
 			isa = PBXGroup;
 			children = (
+				F8141E622B1F632200DC7564 /* Cart */,
 				F8141E3C2B1F5BC700DC7564 /* Home */,
 			);
 			path = Core;
@@ -211,6 +237,8 @@
 			isa = PBXGroup;
 			children = (
 				F8141E432B1F5CBA00DC7564 /* HomeView.swift */,
+				F8141E542B1F609A00DC7564 /* HomeCard.swift */,
+				F8141E562B1F60DC00DC7564 /* HomeDetails.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -230,6 +258,67 @@
 				F8141E522B1F5E5D00DC7564 /* NetworkErrors.swift */,
 			);
 			path = Constants;
+			sourceTree = "<group>";
+		};
+		F8141E582B1F610F00DC7564 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				F8141E5C2B1F616200DC7564 /* CustomAsyncImage.swift */,
+				F8141E5E2B1F625500DC7564 /* CustomStepper.swift */,
+				F8141E602B1F626A00DC7564 /* CustomBackButton.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		F8141E592B1F611E00DC7564 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				F8141E5A2B1F613300DC7564 /* ScreenSize.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		F8141E622B1F632200DC7564 /* Cart */ = {
+			isa = PBXGroup;
+			children = (
+				F8141E672B1F634600DC7564 /* View */,
+				F8141E662B1F634300DC7564 /* Model */,
+				F8141E652B1F633B00DC7564 /* ViewModel */,
+			);
+			path = Cart;
+			sourceTree = "<group>";
+		};
+		F8141E652B1F633B00DC7564 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				F8141E632B1F633000DC7564 /* CartViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		F8141E662B1F634300DC7564 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F8141E682B1F635800DC7564 /* CartItem.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		F8141E672B1F634600DC7564 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F8141E6A2B1F638800DC7564 /* CartCard.swift */,
+				F8141E6E2B1F63B500DC7564 /* CartView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F8141E702B1F647200DC7564 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				F8141E712B1F648200DC7564 /* PreviewProvider+.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -362,16 +451,27 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F8141E552B1F609A00DC7564 /* HomeCard.swift in Sources */,
+				F8141E5D2B1F616200DC7564 /* CustomAsyncImage.swift in Sources */,
 				F8141E462B1F5CE700DC7564 /* HomeManager.swift in Sources */,
 				F8141E4A2B1F5D3B00DC7564 /* Filter.swift in Sources */,
 				F8141E482B1F5D0300DC7564 /* HomeViewModel.swift in Sources */,
+				F8141E6F2B1F63B500DC7564 /* CartView.swift in Sources */,
 				F8141E0D2B1F568C00DC7564 /* ContentView.swift in Sources */,
 				F8141E442B1F5CBA00DC7564 /* HomeView.swift in Sources */,
+				F8141E5B2B1F613300DC7564 /* ScreenSize.swift in Sources */,
+				F8141E722B1F648200DC7564 /* PreviewProvider+.swift in Sources */,
+				F8141E5F2B1F625500DC7564 /* CustomStepper.swift in Sources */,
+				F8141E612B1F626A00DC7564 /* CustomBackButton.swift in Sources */,
 				F8141E3A2B1F5B4500DC7564 /* CoordinatorView.swift in Sources */,
+				F8141E6B2B1F638800DC7564 /* CartCard.swift in Sources */,
 				F8141E382B1F5B0800DC7564 /* CoordinatorViewModel.swift in Sources */,
 				F8141E532B1F5E5D00DC7564 /* NetworkErrors.swift in Sources */,
+				F8141E692B1F635800DC7564 /* CartItem.swift in Sources */,
 				F8141E0B2B1F568C00DC7564 /* AleloApp.swift in Sources */,
 				F8141E362B1F5ADF00DC7564 /* Coordinator.swift in Sources */,
+				F8141E572B1F60DC00DC7564 /* HomeDetails.swift in Sources */,
+				F8141E642B1F633000DC7564 /* CartViewModel.swift in Sources */,
 				F8141E422B1F5C4F00DC7564 /* Product.swift in Sources */,
 				F8141E4D2B1F5DAA00DC7564 /* Service.swift in Sources */,
 				F8141E502B1F5E0B00DC7564 /* Constants.swift in Sources */,
