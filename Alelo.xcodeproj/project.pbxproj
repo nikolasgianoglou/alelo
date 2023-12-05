@@ -14,6 +14,9 @@
 		F8141E1C2B1F568D00DC7564 /* AleloTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8141E1B2B1F568D00DC7564 /* AleloTests.swift */; };
 		F8141E262B1F568D00DC7564 /* AleloUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8141E252B1F568D00DC7564 /* AleloUITests.swift */; };
 		F8141E282B1F568D00DC7564 /* AleloUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8141E272B1F568D00DC7564 /* AleloUITestsLaunchTests.swift */; };
+		F8141E362B1F5ADF00DC7564 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8141E352B1F5ADF00DC7564 /* Coordinator.swift */; };
+		F8141E382B1F5B0800DC7564 /* CoordinatorViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8141E372B1F5B0800DC7564 /* CoordinatorViewModel.swift */; };
+		F8141E3A2B1F5B4500DC7564 /* CoordinatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8141E392B1F5B4500DC7564 /* CoordinatorView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +47,9 @@
 		F8141E212B1F568D00DC7564 /* AleloUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AleloUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F8141E252B1F568D00DC7564 /* AleloUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AleloUITests.swift; sourceTree = "<group>"; };
 		F8141E272B1F568D00DC7564 /* AleloUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AleloUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		F8141E352B1F5ADF00DC7564 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		F8141E372B1F5B0800DC7564 /* CoordinatorViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoordinatorViewModel.swift; sourceTree = "<group>"; };
+		F8141E392B1F5B4500DC7564 /* CoordinatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoordinatorView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +100,7 @@
 		F8141E092B1F568C00DC7564 /* Alelo */ = {
 			isa = PBXGroup;
 			children = (
+				F8141E342B1F5AC600DC7564 /* Coordinator */,
 				F8141E0A2B1F568C00DC7564 /* AleloApp.swift */,
 				F8141E0C2B1F568C00DC7564 /* ContentView.swift */,
 				F8141E0E2B1F568D00DC7564 /* Assets.xcassets */,
@@ -125,6 +132,16 @@
 				F8141E272B1F568D00DC7564 /* AleloUITestsLaunchTests.swift */,
 			);
 			path = AleloUITests;
+			sourceTree = "<group>";
+		};
+		F8141E342B1F5AC600DC7564 /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				F8141E352B1F5ADF00DC7564 /* Coordinator.swift */,
+				F8141E372B1F5B0800DC7564 /* CoordinatorViewModel.swift */,
+				F8141E392B1F5B4500DC7564 /* CoordinatorView.swift */,
+			);
+			path = Coordinator;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -258,7 +275,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				F8141E0D2B1F568C00DC7564 /* ContentView.swift in Sources */,
+				F8141E3A2B1F5B4500DC7564 /* CoordinatorView.swift in Sources */,
+				F8141E382B1F5B0800DC7564 /* CoordinatorViewModel.swift in Sources */,
 				F8141E0B2B1F568C00DC7564 /* AleloApp.swift in Sources */,
+				F8141E362B1F5ADF00DC7564 /* Coordinator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
