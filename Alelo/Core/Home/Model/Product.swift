@@ -12,7 +12,7 @@ struct ProductList: Codable {
 }
 
 struct Product: Codable, Identifiable {
-    var id: String = UUID().uuidString 
+    var id: String = UUID().uuidString
     let name: String
     let image: String
     let regular_price: String
