@@ -40,7 +40,7 @@ struct HomeCard: View {
                 .padding()
                 .frame(maxWidth: .infinity)
                 .background {
-                    Color.blue
+                    Color.white
                 }
             }
             .background {
