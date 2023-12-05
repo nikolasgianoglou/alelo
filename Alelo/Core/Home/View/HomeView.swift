@@ -17,12 +17,11 @@ struct HomeView: View {
                 
                 
                 HStack(spacing: 16) {
-//                    textfield
+                    Spacer()
                     cartIcon
                 }
                 .padding(.horizontal)
                 
-                // MARK: Filtros
                 ScrollView(.horizontal) {
                     HStack(spacing: 16) {
                         ForEach(Filter.allCases, id: \.self) { filter in
@@ -32,7 +31,6 @@ struct HomeView: View {
                     .padding()
                 }
                 
-                // MARK: Produtos
                 ScrollView {
                     VStack {
                         ForEach(viewModel.filteredProducts) { prod in
@@ -47,24 +45,6 @@ struct HomeView: View {
 }
 
 extension HomeView {
-//    var textfield: some View {
-//        HStack(spacing: 8) {
-//            Image(systemName: "magnifyingglass")
-//                .foregroundStyle(Color.black.opacity(0.3))
-//            TextField("Buscar", text: $viewModel.searchField)
-//        }
-//        .frame(height: 50)
-//        .padding(.horizontal, 8)
-//        .background {
-//            ZStack {
-//                RoundedRectangle(cornerRadius: 10)
-//                    .stroke(Color.black.opacity(0.3))
-//                RoundedRectangle(cornerRadius: 10)
-//                    .fill(Color.white)
-//            }
-//            .shadow(color: .gray.opacity(0.2), radius: 5)
-//        }
-//    }
     var cartIcon: some View {
         NavigationLink {
             CartView()
@@ -75,7 +55,7 @@ extension HomeView {
                 .background {
                     RoundedRectangle(cornerRadius: 10)
                         .fill(Color.white)
-                        .shadow(color: .gray.opacity(0.2), radius: 5)
+                        .shadow(color: .gray.opacity(0.4), radius: 5)
                 }
         }
     }
@@ -89,7 +69,6 @@ extension HomeView {
                 .padding(.horizontal)
                 .background {
                     RoundedRectangle(cornerRadius: 15)
-//                        .fill(viewModel.selectedFilter == filter ? .themePrimary : .white)
                 }
         }
     }
