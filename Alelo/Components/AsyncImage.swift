@@ -7,8 +7,6 @@
 
 import SwiftUI
 
-import SwiftUI
-
 struct CustomAsyncImage: View {
     var product: Product
     var size: CGFloat
@@ -48,4 +46,3 @@ struct CustomAsyncImage_Previews: PreviewProvider {
         CustomAsyncImage(product: dev.product, size: 10)
     }
 }
-
