@@ -10,13 +10,13 @@ import SwiftUI
 import SwiftUI
 
 struct CustomAsyncImage: View {
-    var product: Product
+    var image: String
     var size: CGFloat
     
     var body: some View {
         Group {
 
-            if let url = URL(string: product.image) {
+            if let url = URL(string: image) {
                 AsyncImage(url: url) { image in
                     image
                         .resizable()
@@ -26,7 +26,7 @@ struct CustomAsyncImage: View {
                         Image(systemName: "photo")
                             .resizable()
                             .scaledToFit()
-
+                            
                             .padding(size / 5)
 
                         ProgressView()
@@ -37,6 +37,7 @@ struct CustomAsyncImage: View {
                     .resizable()
                     .scaledToFit()
                     .padding(size / 5)
+                    .foregroundColor(Color.gray)
             }
         }
         .frame(height: size)
@@ -45,7 +46,7 @@ struct CustomAsyncImage: View {
 
 struct CustomAsyncImage_Previews: PreviewProvider {
     static var previews: some View {
-        CustomAsyncImage(product: dev.product, size: 10)
+        CustomAsyncImage(image: dev.product.image, size: 10)
     }
 }
 

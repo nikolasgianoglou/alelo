@@ -27,7 +27,6 @@ class Service: ServiceProtocol {
         
         let data = try? Data(contentsOf: url)
         let list =  try? JSONDecoder().decode(ProductList.self, from: data!)
-        print("list of products: \(list)")
         return list
     }
 }

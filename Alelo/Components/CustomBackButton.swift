@@ -15,9 +15,8 @@ struct CustomBackButton: View {
             dismiss()
         } label: {
             Image(systemName: "chevron.left")
-//                .bold()
                 .font(.title3)
-                .foregroundStyle(.red)
+                .foregroundStyle(.black)
         }
         .padding(.horizontal)
         .frame(maxWidth: .infinity, alignment: .leading)

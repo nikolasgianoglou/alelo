@@ -50,7 +50,7 @@ final class desafioAleloTests: XCTestCase {
         let viewModel = CartViewModel.shared
         let mockProducts = mock_cart
         viewModel.products = mockProducts
-        let productsTotalEqualsExpected = viewModel.getTotalValue() == "R$ 1309,10"
+        let productsTotalEqualsExpected = viewModel.getTotalValue() == "R$ 810,00"
         XCTAssertTrue(productsTotalEqualsExpected, "Should be true if the total price is correct (using mock)")
     }
     

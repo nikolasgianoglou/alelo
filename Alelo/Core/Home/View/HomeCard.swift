@@ -15,7 +15,7 @@ struct HomeCard: View {
             HomeDetails(product: product)
         } label: {
             VStack {
-                CustomAsyncImage(product: product, size: 100)
+                CustomAsyncImage(image: product.image, size: 100)
                 
                 VStack(alignment: .leading) {
                     Text(product.name)
@@ -52,12 +52,14 @@ struct HomeCard: View {
                 if product.onSale {
                     Text("PROMOÇÃO")
                         .lineLimit(1)
-                        .foregroundStyle(.white)
+                        .foregroundStyle(.black)
                         .font(.subheadline)
                         .padding(.vertical, 4)
                         .padding(.horizontal, 8)
                         .background {
                             RoundedRectangle(cornerRadius: 5)
+                                .fill(Color.white)
+                                .shadow(radius: 10)
 //                                .fill(.themePrimary)
                         }
                         .padding(12)

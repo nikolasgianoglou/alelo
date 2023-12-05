@@ -64,11 +64,13 @@ extension HomeView {
             viewModel.selectedFilter = filter
         } label: {
             Text(filter.text)
-                .foregroundStyle(viewModel.selectedFilter == filter ? Color.white : Color.black.opacity(0.5))
+                .foregroundStyle(viewModel.selectedFilter == filter ? Color.black : Color.black.opacity(0.5))
                 .padding(.vertical, 8)
                 .padding(.horizontal)
                 .background {
                     RoundedRectangle(cornerRadius: 15)
+                        .fill(Color.white)
+                        .shadow(radius: 10)
                 }
         }
     }

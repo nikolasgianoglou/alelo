@@ -23,7 +23,7 @@ struct HomeDetails: View {
             VStack(spacing: 16) {
                 CustomBackButton()
                 
-                CustomAsyncImage(product: product, size: 100)
+                CustomAsyncImage(image: product.image, size: 100)
                     .frame(maxWidth: .infinity)
                     .padding(.vertical)
                     .background {
@@ -41,14 +41,14 @@ struct HomeDetails: View {
                 
                 if product.onSale {
                     Text("PROMOÇÃO")
-                        .font(.title2)
-                        .foregroundStyle(Color.white)
-                        .bold()
+                        .font(.title3)
+                        .foregroundStyle(Color.black)
                         .padding(.horizontal, 12)
                         .padding(.vertical, 4)
                         .background {
                             RoundedRectangle(cornerRadius: 5)
-                                .fill(Color.blue)
+                                .fill(Color.white)
+                                .shadow(radius: 10)
                         }
                     
                     HStack(spacing: 6) {
@@ -56,7 +56,7 @@ struct HomeDetails: View {
                         Text(product.regularPrice)
                             .bold()
                             .foregroundStyle(Color.black.opacity(0.35))
-                            .strikethrough(true, color: Color.red)
+                            .strikethrough(true, color: Color.gray)
                         Text("por")
                         Text(product.actualPrice)
                             .bold()

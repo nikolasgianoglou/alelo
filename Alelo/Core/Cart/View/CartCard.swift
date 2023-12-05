@@ -13,7 +13,7 @@ struct CartProductCard: View {
     
     var body: some View {
         HStack (spacing: 8) {
-            CustomAsyncImage(product: item.product, size: 60)
+            CustomAsyncImage(image: item.product.image, size: 60)
             
             VStack (alignment: .leading) {
                 Text(item.product.name)

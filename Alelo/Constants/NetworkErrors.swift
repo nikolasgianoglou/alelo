@@ -13,7 +13,7 @@ enum NetworkErrors: LocalizedError {
     var errorDescription: String? {
         switch self {
         case .invalidUrl: return "URL inválida."
-        case .badRequest: return "Falha na requisição."
+        case .badRequest: return "Erro na requisição."
         case .decodingError: return "Erro ao decodificar JSON."
         }
     }
