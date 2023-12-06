@@ -36,7 +36,7 @@ class ServiceMock: ServiceProtocol {
     }
 }
 
-final class desafioAleloTests: XCTestCase {
+final class AleloTests: XCTestCase {
 
     func test_filter_sales() {
         let viewModel = HomeViewModel(manager: HomeManager(webservice: ServiceMock()))
