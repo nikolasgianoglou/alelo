@@ -7,8 +7,6 @@
 
 import Foundation
 
-import Foundation
-
 struct CartItem: Identifiable, Equatable {
     static func == (lhs: CartItem, rhs: CartItem) -> Bool {
         return lhs.id == rhs.id
