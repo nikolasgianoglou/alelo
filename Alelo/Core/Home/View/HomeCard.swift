@@ -60,7 +60,6 @@ struct HomeCard: View {
                             RoundedRectangle(cornerRadius: 5)
                                 .fill(Color.white)
                                 .shadow(radius: 10)
-//                                .fill(.themePrimary)
                         }
                         .padding(12)
                 }
