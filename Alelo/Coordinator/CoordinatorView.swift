@@ -18,6 +18,4 @@ struct CoordinatorView: View {
             }
         }
     }
-//        .environmentObject(ScreenSize(size: ))
-    
 }
